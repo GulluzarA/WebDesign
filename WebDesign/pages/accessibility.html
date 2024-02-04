@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Accessibility</title>
+
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+</head>
+
+<body>
+
+    <div class="content">
+
+        <div class="alpha">
+
+            <a class="skip-link" href='#main'>Skip to content</a>
+
+            <header>
+
+                <p>Student Group 1357</p>
+
+                <nav class="primary-nav" role="navigation" aria-label="Primary Menu">
+
+                    <ul id="desktop-nav" class="nav-links nav-only">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="reflection.html">Reflection</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="information.html">Information</a></li>
+                        <li><a href="fun.html">Fun</a></li>
+                    </ul>
+
+                    <button id="mobile-menubutton">Menu</button>
+                    <div id="mobile-header"></div>
+
+                    <ul id="mobile-nav" class="nav-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="reflection.html">Reflection</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="information.html">Information</a></li>
+                        <li><a href="fun.html">Fun</a></li>
+                    </ul>
+
+                </nav>
+            </header>
+            <main id="main">
+
+                <h1 role="heading">Accessibility</h1>
+
+                <div class="textbox">
+
+                    <article>
+                        <h2>Definitions</h2>
+
+                        <p>Web accessibility is the the inclusive practice of removing barriers
+                            that prevent interaction with, or access to, websites by people with disabilities. It also
+                            includes the
+                            degree of ease and effectiveness a web system can be accessed and used.</p>
+
+                        <h2>Disabilities Affected By Accessibility</h2>
+
+                        <p>Disabilities are grouped into five main categories: (1) <span>visual impairments</span>, (2)
+                            <span>auditory impairments</span>, (3)
+                            <span>motor impairments</span>, (4) <span>cognitive impairments</span>, and (5)
+                            <span>vestibular disorders and seizures</span>.
+                        </p>
+
+                        <h3>Examples Of Best Practices</h3>
+
+                        <p>In regards to <span>visual impairments</span>, the text on the website needs to be clearly
+                            visible, and the website
+                            need
+                            to take color blindness into consideration. In the case where the user is blind, the website
+                            need to be
+                            suit
+                            screen reading software and navigation through keyboard exclusively.</p>
+
+                        <p><span>Auditory impairments</span> are important to facilitate for when including audio and
+                            videos on the website.</p>
+
+                        <p>Examples of good practices for dealing with <span>motor impairments</span> is full keyboard
+                            support, simple
+                            navigation,
+                            and links and buttons of sufficiently large sizes.</p>
+
+                        <p>Examples of good practices for dealing with <span>cognitive impairments</span> are using
+                            simple navigation, avoiding
+                            complex sentences, avoiding blinking and moving content, and the ability to pause/stop
+                            audio, video, and
+                            animation content.</p>
+
+                        <p>For <span>vestibular disorders and seizures</span>, it is important to avoid flickering or
+                            flashing lights, and either
+                            minimize the use of animations and automatic scrolling or give the user accessible control
+                            over it (turn
+                            on/off).</p>
+
+                        <h2>Our Accessibility Measures</h2>
+
+                        <h3>Automated Tests</h3>
+
+                        <p>We ran our live GitHub page in <a title="AChecker Web Accessibility Checker" target="_blank"
+                                href="https://achecker.achecks.ca/checker/index.php">AChecker</a>
+                            and found 0 known / likely problems, and 32-66 potential problems. The remaining issues do
+                            not have a major impact on accessibility and we therefore prioritized other measurements.
+                        </p>
+
+                        <section>
+                            <figure>
+                                <img src="/media/accessibility/color-blindness-greyscale-achromatopsia.jpg"
+                                    alt="Normal and color filtered comparison of the accessibility page using the Colorblind Web Page Filter by Toptal">
+                                <figcaption>Normal and greyscale color filtered comparison of the accessibility page.
+                                    Used the
+                                    <a title="Toptal Color Blind Filter - To check a webpage's accessibility for colorblinded individuals"
+                                        target="_blank" href="https://www.toptal.com/designers/colorfilter">Colorblind
+                                        Web
+                                        Page Filter by Toptal</a>.</ficaption>
+                            </figure>
+
+                            <p>We tested the website’s facilitation for color blindness with <a
+                                    title="Toptal Color Blind Filter - To check a webpage's accessibility for colorblinded individuals"
+                                    target="_blank" href="https://www.toptal.com/designers/colorfilter">Toptal’s Color
+                                    Blind Filter</a>.
+                                The greyscale test
+                                shows that most of the text has sufficient contrast. However, the title on the pages
+                                could potentially
+                                fail
+                                WCAG’s AAA contrast ratio requirement. This in turn is difficult for us to test with the
+                                <a title="WebAIM Contrast Checker - Finds the contrast ratio between a foreground and background color."
+                                    href="https://webaim.org/resources/contrastchecker/" target="_blank">WebAIM Contrast
+                                    Checker</a>,
+                                because we do not use a
+                                hardcoded color value for the background, but rather alpha filters on top of a fairly
+                                bright image to
+                                darken it. Then again,
+                                <a title="WAVE Web Accessibility Evaluation Tool - A tool that automatically scans a particular webpage for accessibility issues."
+                                    href="https://wave.webaim.org/" target="_blank">WAVE’s web accessibility evaluation
+                                    tool</a> did not
+                                identify a contrast error.
+                            </p>
+                        </section>
+
+                        <h3>Skip To Content</h3>
+
+                        <section>
+
+                            <figure>
+                                <img alt="Screenshot of the front page with focus on Skip to content button showing in the top-left corner"
+                                    src="/media/accessibility/skip-to-content.jpg">
+                                <figcaption>Screenshot of the front page with focus on "Skip to content" button showing
+                                    in the top-left corner.</figcaption>
+                            </figure>
+
+                            <p>To further enhance the accessibility for visually impaired individuals, we have added
+                                full keyboard support. By pressing the TAB button, the user will first see a “Skip to
+                                content” button. The user can activate any of the focused links with ENTER, and
+                                otherwise move
+                                vertically with the up and down arrow keys. </p>
+
+                        </section>
+
+                    </article>
+
+                    <div class="secondary-nav-container">
+
+                        <p>Continue to the other pages to learn more about our experience.</p>
+
+                        <nav class="secondary-nav" role="navigation" aria-label="Secondary Menu">
+                            <ul class="nav-links white-background">
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="reflection.html">Reflection</a></li>
+                                <li><a href="information.html">Information</a></li>
+                                <li><a href="fun.html">Fun</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+            <footer></footer>
+
+        </div>
+
+    </div>
+
+    <script src="/scripts/code.js"></script>
+
+</body>
+
+</html>

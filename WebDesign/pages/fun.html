@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Fun</title>
+
+    <link rel="stylesheet" href="/stylesheets/fun.css" type="text/css">
+</head>
+
+<body class="fun">
+
+    <a id="return-home" class="always-show-link" href="/index.html">Return Home</a>
+
+    <div id="instructions-button">?</div>
+
+    <main id="main">
+
+        <div class="overlay-title">
+            <h1>Fun</h1>
+        </div>
+
+        <div id="interact-container">
+            <div>Click to interact with the objects.</div>
+        </div>
+
+        <div id="horizontal-prompt-container">
+            <div>For mobile devices, it is recommended to view this page horizontally.</div>
+        </div>
+
+        <div id="popup-box">
+            <div class="popup-container">
+
+                <div>
+                    <h2 id="dynamic-h2">dynamic-h2</h2>
+
+                    <h3 id="dynamic-h3">dynamic-h3</h3>
+
+                    <blockquote id="dynamic-quote0">dynamic-quote0</blockquote>                    
+                </div>
+
+                <div>
+                    <figure>
+                        <img id="dynamic-img" src="/media/fun/pen.jpg" alt="">
+                        <figcaption>All images are free to use without the need of attribution. Found on <a href="https://pixabay.com/">Pixabay</a> or <a href="https://unsplash.com/">Unsplash</a>.</figcaption>
+                    </figure>
+                </div>
+
+                <div>
+                    <blockquote id="dynamic-quote1">"Dinamic-qoute1"</blockquote>
+                </div>
+
+                <div>
+                    <blockquote id="dynamic-quote2">"Dinamic-qoute2"</blockquote>
+                </div>
+                
+                <button id="dismiss-button">X</button>
+
+            </div>
+        </div>
+
+        <div id="div-16-9">
+
+            <div id="popup-background"></div>
+
+            <div id="book"></div>
+            <div id="pen"></div>
+            <div id="smartphone"></div>
+            <div id="laptop"></div>
+            <div id="coffee"></div>
+            <div id="paper"></div>
+
+            <img id="fallback-img" src="/"
+                alt="Animated cartoon picture of a desk with a laptop and accessories from a bird perspective" title=""
+                width="1920" height="1080">
+
+            <video id="vid" autoplay loop muted onerror playsinline>
+
+                <source src="/media/fun/loop-laptop-h264.mp4" type="video/mp4">
+                <source src="/media/fun/laptop-1920-h264.mp4" type="video/mp4">
+                <source src="/media/fun/laptop-1920-vp8.webm" type="video/webm">
+
+                <!-- Extra fallback. -->
+                <img src="/media/fun/laptop-screenshot-1920.jpg"
+                    alt="Animated cartoon picture of a desk with a laptop and accessories from a bird perspective"
+                    title="" width="1920" height="1080">
+
+                <p>Sorry, your browser doesn't support embedded/HTML videos.</p>
+            </video>
+
+        </div>
+
+    </main>
+
+    <!-- Script at the end of body. -->
+    <script src="/scripts/fun.js"></script>
+
+</body>
+
+</html>
